@@ -1099,6 +1099,25 @@ END
   <section>
     <title>Documentation and Resources</title>
     
+    <entry id="migration">
+      <question>How do I migrate my ChatZilla preferences to a different cZ installation?</question>
+      <answer>
+        <p>If you run cZ as a stand alone app and wish to continue doing so, just copy your entire profile folder.  This will be <code>%APPDATA%\Chatzilla</code> on Windows and <code>.chatzilla</code> elsewhere.</p>
+        
+        <p>If you're copying your preferences from a Mozilla browser profile and wish to copy the <b>browser's</b> preferences, including cZ, to a new machine, just copy your browser's profile using the location specified by your browser's FAQs.</p>
+        
+        <p>
+          If you're switching from a one browser to another or from a browser-based installation to a XULRunner installation, you have more work to do.  Follow the following instructions:
+          <ol>
+            <li>Copy all entries in <code>prefs.js</code> that start with <code>extensions.irc.</code> from one profile to another.</li>
+            <li>Copy all files in the <code><i>profilefolder</i>/extensions/chatzilla</code> to the same folder in the new profile where <code><i>profilefolder</i></code> is your profile folder location.</li>
+          </ol>    
+        </p>
+        
+        <p>If you want to migrate to or from another chat program, there currently is no known solution.</p>
+      </answer>
+    </entry>
+    
     <entry id="irc">
       <question>Is there an IRC channel for ChatZilla?</question>
       <answer>
